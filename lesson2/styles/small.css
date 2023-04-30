@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo&family=Poppins&display=swap");
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #feeceb;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Arvo", serif;
+}
+
+p,
+h4 {
+  font-family: "Poppins", sans-serif;
+}
+
+header,
+footer {
+  text-align: center;
+  background-color: #ee4e34;
+  padding: 1rem 0.1rem;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  color: white;
+}
+
+footer {
+  margin-top: -2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+main {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  max-width: 24.5rem;
+}
+
+section {
+  border: 1.5px solid black;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 2rem;
+  background-color: #fce77d;
+  overflow: hidden;
+}
+
+h1,
+h2 {
+  margin: 0 auto;
+  line-height: 3rem;
+}
+
+h3 {
+  background-color: #ee4e34;
+  color: white;
+  margin: 0 auto;
+  padding: 2% 1rem;
+}
+
+h4 {
+  margin-top: 0.7rem;
+  margin-bottom: 1rem;
+  padding: 0% 1rem;
+}
+
+p {
+  line-height: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+img {
+  margin: 0 auto;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+}

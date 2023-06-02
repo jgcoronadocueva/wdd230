@@ -1,0 +1,25 @@
+
+@media only screen and (min-width: 560px) {
+  /*----------- BODY --------------*/
+
+  /*----------- HEADER --------------*/
+  header img {
+    width: auto;
+  }
+
+  header {
+    font-size: 1.2rem;
+  }
+
+  /*----------- NAVIGATION --------------*/
+
+  nav ul {
+    flex-direction: row;
+  }
+
+  /*----------- MAIN --------------*/
+
+  /*----------- FOOTER --------------*/
+} 
+
+

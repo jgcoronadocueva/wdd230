@@ -1,0 +1,9 @@
+@media screen and (min-width: 500px) {
+    nav {
+        grid-column: 1 / 4;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}

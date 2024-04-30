@@ -17,6 +17,7 @@ header {
     justify-content: center;
     gap: 20px;
     padding: 1rem 0;
+    font-size: 1.5rem;
 }
 
 img {
@@ -61,6 +62,7 @@ main {
 main h1 {
     text-align: center;
     margin-top: 1rem;
+    font-size: 1.2rem;
 }
 
 main a {

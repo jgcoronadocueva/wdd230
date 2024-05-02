@@ -22,5 +22,6 @@ button.addEventListener('click', () => {
     }
     else {
         input.focus();
+        window.alert("Please enter a book and a chapter")
     }
 });

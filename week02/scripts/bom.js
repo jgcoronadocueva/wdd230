@@ -10,8 +10,8 @@ button.addEventListener('click', () => {
         listItem.textContent = input.value;
         deleteButton.textContent = '❌';
 
-        listItem.append(deleteButton);
-        list.append(listItem);
+        listItem.appendChild(deleteButton);
+        list.appendChild(listItem);
 
         deleteButton.addEventListener('click', () => {
             list.removeChild(listItem);

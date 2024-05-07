@@ -1,0 +1,98 @@
+body {
+  font-family: Noto Sans, sans-serif;
+  font-size: 1rem;
+  line-height: 150%;
+}
+
+/*----------- HEADER --------------*/
+
+header {
+  padding: 1.5rem 1rem;
+  background-color: #4D869C;
+  text-align: center;
+}
+
+h1 {
+  font-family: Cinzel Decorative, serif;
+  font-size: 2rem;
+  color: white;
+  margin: 0;
+  line-height: 125%;
+}
+
+/*----------- MAIN --------------*/
+
+main {
+  padding: 1rem 0.5rem;
+  background-color: #fff;
+}
+
+h2 {
+  font-family: Kanit, serif;
+  padding: 0.8rem 0.5rem;
+  background-color: #CDE8E5;
+  font-size: 1.3rem;
+}
+
+h2.main-title {
+  background-color: transparent;
+  padding: 0;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+p {
+  padding: 0.5rem 0.6rem;
+}
+
+#scenarios ul {
+  padding: 0.6rem 1rem 0.6rem 2rem;
+}
+
+#scenarios li:nth-of-type(1),
+#scenarios li:nth-of-type(2) {
+  margin-bottom: 1rem;
+}
+
+#color-schema img {
+  display: block;
+  margin: 0 auto;
+  max-width: 50%;
+  padding-top: 0.5rem;
+}
+
+#color-schema ul {
+  list-style: none;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  padding-right: 2.5rem;
+}
+
+.font-example {
+  background-color: #EEF7FF;
+  padding: 1rem;
+  margin: 1rem;
+  margin-bottom: 2rem;
+}
+
+#typography p:nth-of-type(2),
+#typography p:nth-of-type(3) {
+  padding-top: 0;
+}
+
+#typography h1 {
+  color: black;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#typography h3 {
+  font-family: Kanit, serif;
+}
+
+/*----------- FOOTER --------------*/
+footer {
+  background-color: #F6F5F2;
+  padding: 0.5rem 2%;
+  text-align: center;
+}

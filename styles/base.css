@@ -30,8 +30,29 @@ nav {
     background-color: #87ADDE;
 }
 
-ul {
+#hamButton {
+    font-size: 2rem;
+    background: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+}
+
+#hamButton::before {
+    content: "\2630";
+}
+
+#hamButton.open::before {
+    content: "X"
+}
+
+ul.menuLinks {
+    display: none;
     list-style-type: none;
+}
+
+ul.open {
+    display: block;
 }
 
 nav a {

@@ -1,0 +1,8 @@
+@media screen and (min-width: 500px) {
+
+  main,
+  footer {
+    max-width: 90%;
+    margin: auto;
+  }
+}

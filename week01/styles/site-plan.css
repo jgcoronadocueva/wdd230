@@ -4,7 +4,6 @@ body {
   line-height: 150%;
 }
 
-/*----------- HEADER --------------*/
 
 header {
   padding: 1.5rem 1rem;
@@ -20,7 +19,7 @@ h1 {
   line-height: 125%;
 }
 
-/*----------- MAIN --------------*/
+
 
 main {
   padding: 1rem 0.5rem;
@@ -80,14 +79,16 @@ p {
   padding-top: 0;
 }
 
-#typography h1 {
+#typography h3 {
+  font-family: Cinzel Decorative, serif;
   color: black;
   font-size: 1.5rem;
   text-align: center;
 }
 
-#typography h3 {
+#typography h4 {
   font-family: Kanit, serif;
+  font-size: 1.3rem;
 }
 
 #wireframes img {
@@ -105,10 +106,6 @@ p {
   width: 50%;
 }
 
-
-
-
-/*----------- FOOTER --------------*/
 footer {
   background-color: #F6F5F2;
   padding: 0.5rem 2%;

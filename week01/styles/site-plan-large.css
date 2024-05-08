@@ -1,5 +1,10 @@
 @media screen and (min-width: 500px) {
 
+  main {
+    max-width: 80%;
+    margin: auto;
+  }
+
   #wireframes .images {
     display: flex;
     justify-content: center;

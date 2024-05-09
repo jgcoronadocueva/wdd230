@@ -1,0 +1,41 @@
+header {
+    padding: 1.5rem 1rem;
+    background-color: #4D869C;
+    text-align: center;
+}
+
+h1 {
+    font-family: Cinzel Decorative, serif;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+
+main {
+    padding: 1rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+img {
+    padding: 2rem;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    background-image: black;
+    animation: fade 15s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+footer {
+    text-align: center;
+}

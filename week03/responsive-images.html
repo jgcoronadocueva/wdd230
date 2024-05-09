@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images Example</title>
+    <meta name="description" content="Activity to learn more about responsive images">
+    <meta name="author" content="Gonzalo Coronado">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Kanit&family=Noto+Sans&display=swap"
+        rel="stylesheet">
+    <link href="styles/responsive-images.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/hero-small.webp">
+                <source media="(max-width: 1000px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-large.webp" alt="Santiago Chile temple" width="1278" height="750">
+            </picture>
+        </div>
+    </main>
+</body>
+
+</html>

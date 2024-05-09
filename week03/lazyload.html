@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Loading Example</title>
+    <meta name="description" content="Activity to learn more about lazy loading">
+    <meta name="author" content="Gonzalo Coronado">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Kanit&family=Noto+Sans&display=swap"
+        rel="stylesheet">
+    <link href="styles/lazyload.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Lazy Loading Example</h1>
+    </header>
+
+    <main>
+        <img src="images/portrait.webp" alt="External placeholder" width="400" height="600" loading="lazy">
+        <img src="images/portrait-1.webp" alt="External placeholder" width="400" height="600" loading="lazy">
+        <img src="images/portrait-2.webp" alt="External placeholder" width="400" height="600" loading="lazy">
+        <img src="images/portrait-3.webp" alt="External placeholder" width="400" height="600" loading="lazy">
+        <img src="images/portrait.webp" alt="External placeholder" width="400" height="600" loading="lazy">
+        <img src="images/portrait.webp" alt="External placeholder" width="400" height="600" loading="lazy">
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Gonzalo Coronado | Ecuador</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/lazyload.js"></script>
+</body>
+
+</html>

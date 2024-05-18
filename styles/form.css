@@ -1,9 +1,15 @@
 /*----------- FORM STYLING --------------*/
+:root {
+    --input-background-color: #eee;
+    --box-border-color-valid: green;
+    --box-border-color-invalid: red;
+    --input-text-color: #555;
+}
+
 #formheading {
     text-align: left;
     padding: 0 1%;
     max-width: 400px;
-    margin-bottom: -.2rem;
 }
 
 .wf1 fieldset {
@@ -27,24 +33,18 @@
     font-size: .9rem;
 }
 
-.wf1 div {
-    padding-top: 1rem;
-    color: #445ba9;
-    font-size: .9rem;
-}
-
 .wf1 input[type="text"],
 .wf1 input[type="password"],
 .wf1 input[type="email"],
 .wf1 select,
 .wf1 input[type="number"] {
-    font-size: 16px;
-    background-color: #eee;
+    font-size: 18px;
+    background-color: var(--input-background-color);
     display: block;
     border: solid 1px #999;
     border-radius: 6px;
     padding: .75rem;
-    color: #555;
+    color: var(--input-text-color);
     width: 100%;
     max-width: 400px;
     appearance: none;
@@ -52,6 +52,7 @@
 
 .wf1 input[type="range"] {
     width: 200px;
+    padding-top: .5rem;
     margin-bottom: 0;
     margin-left: 5px;
 }
@@ -69,20 +70,20 @@
 }
 
 .wf1 input:required {
-    border-left: solid 8px red;
+    border-left: solid 8px var(--box-border-color-invalid);
 }
 
 .wf1 input:required:valid {
-    border-left: solid 8px green;
+    border-left: solid 8px var(--box-border-color-valid);
 }
 
 input::placeholder {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 #ratingvalue {
     padding: .5rem 1.5rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: navy;
 }
 

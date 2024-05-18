@@ -15,8 +15,8 @@ function checkPassword() {
         confirmedPassword.focus();
     } else {
         message.style.display = "none";
-        confirmedPassword.style.backgroundColor = "#fff";
-        confirmedPassword.style.color = "#000";
+        confirmedPassword.style.backgroundColor = "#eee";
+        confirmedPassword.style.color = "#555";
     }
 }
 

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate Our Page</title>
+    <meta name="description" content="Web form to allow users to submit their rating of the home page">
+    <meta name="author" content="Gonzalo Coronado">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Kanit&family=Noto+Sans&family=Sawarabi+Mincho&family=Yeseva+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="images/profilepic.jpg" alt="Gonzalo profile picture" width="90" height="105">
+        <span>Gonzalo Coronado</span>
+        <button id="mode">🌛</button>
+    </header>
+
+    <nav>
+        <button id="hamButton"></button>
+        <ul class="menuLinks">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1 id="formheading">Rate Our Page</h1>
+        <form method="get" action="record.html" class="wf1">
+            <div id="message"></div>
+            <fieldset>
+                <label>Username* <input type="text" id="username" name="username" placeholder="Enter your username"
+                        required></label>
+                <label>Password* <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]{8}"
+                        placeholder="********" required></label>
+                <label>Confirm Password* <input type="password" id="confirmedPassword" name="confirmedPassword"
+                        pattern="[a-zA-Z0-9]{8}" placeholder="********" required></label>
+                <label>Email* <input type="email" id="email" name="email" pattern=[a-zA-Z0-9._%+\-]+@byui\.edu
+                        placeholder="someone@byui.edu" title="Please enter a valid email address" required></label>
+                <label>Page Rating:
+                    <div id="ratingvalue">1</div>
+                    <input type="range" id="rating" name="rating" min="1" max="10" value="1" step="1"
+                        list="rangevalues">
+                </label>
+                <datalist id="rangevalues">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+            </fieldset>
+
+            <input type="submit" value="Share Your Rate">
+        </form>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Gonzalo Coronado | Ecuador</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+/*----------- FORM STYLING --------------*/
+#formheading {
+    text-align: left;
+    padding: 0 1%;
+    max-width: 400px;
+    margin-bottom: -.2rem;
+}
+
+.wf1 fieldset {
+    margin: auto 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+    padding-top: 0;
+    max-width: 400px;
+}
+
+.wf1 legend {
+    color: #445ba9;
+    padding: 0 .5rem;
+}
+
+.wf1 label {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .9rem;
+}
+
+.wf1 div {
+    padding-top: 1rem;
+    color: #445ba9;
+    font-size: .9rem;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="password"],
+.wf1 input[type="email"],
+.wf1 select,
+.wf1 input[type="number"] {
+    font-size: 16px;
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.wf1 input[type="range"] {
+    width: 200px;
+    margin-bottom: 0;
+    margin-left: 5px;
+}
+
+.wf1 input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(#9c2c13, #6f200e);
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: 1rem 2% 3.5rem 2%;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.wf1 input:required {
+    border-left: solid 8px red;
+}
+
+.wf1 input:required:valid {
+    border-left: solid 8px green;
+}
+
+input::placeholder {
+    font-size: 12px;
+}
+
+#ratingvalue {
+    padding: .5rem 1.5rem;
+    font-size: 1.5rem;
+    color: navy;
+}
+
+#rangevalues {
+    margin-left: 10px;
+    display: flex;
+    width: 210px;
+}
+
+#rangevalues option {
+    flex: 1 1 auto;
+}

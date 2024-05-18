@@ -125,4 +125,8 @@ footer {
     background-color: #DEB887;
     text-align: center;
     padding: 0.5rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }

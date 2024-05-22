@@ -1,0 +1,28 @@
+{
+"familyName" : "Coronado",
+"moveDate" : "2023-12-03",
+"numberOfRecords" : "4",
+"visitedBishopric" : false,
+"familyMembers" : [
+    {
+      "name" : "Jorge Gonzalo Coronado Vallejo",
+      "gender" : "Male",
+      "birthdate" : "1969-05-04"
+    },
+    {
+        "name" : "Maria Elizabeth Cueva Bayas",
+        "gender" : "Female",
+        "birthdate" : "1966-10-25"
+      },
+      {
+        "name" : "Jorge Gonzalo Coronado Cueva",
+        "gender" : "Male",
+        "birthdate" : "1995-07-21"
+      },
+      {
+        "name" : "Maria Denise Coronado Cueva",
+        "gender" : "Female",
+        "birthdate" : "1997-11-07"
+      }
+    ]
+}

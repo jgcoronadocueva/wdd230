@@ -6,7 +6,6 @@
 
 body {
     font-family: Kanit, sans-serif;
-    max-width: 1400px;
     margin: auto;
 }
 
@@ -20,10 +19,12 @@ header {
     font-size: 1.5rem;
 }
 
-img {
+#profilepic {
     border: 1px solid rgba(234, 217, 217, 1.2);
     border-radius: 5px;
     overflow: hidden;
+    width: 25%;
+    height: 25%;
 }
 
 #mode {
@@ -105,6 +106,10 @@ main a {
     overflow: hidden;
 }
 
+.card:nth-of-type(2) {
+    text-align: center;
+}
+
 .card h2 {
     background-color: #DEB887;
     padding: 0.5rem;
@@ -125,8 +130,44 @@ footer {
     background-color: #DEB887;
     text-align: center;
     padding: 0.5rem;
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
+}
+
+.hero {
+    margin: 10px auto;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.herolabel {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: radial-gradient(#fff, #4D5B97);
+    border: 1px solid rgba(0, 0, 0, .75);
+    padding: 1rem;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.75;
+}
+
+iframe {
+    width: 400px;
+    height: 250px;
+}
+
+#visits {
+    color: navy;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+
+#weather img,
+#weather p {
+    display: inline-block;
 }

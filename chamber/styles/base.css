@@ -102,9 +102,6 @@ main {
     font-size: 1rem;
     text-transform: uppercase;
     cursor: pointer;
-}
-
-.cta a {
     color: rgba(255, 255, 255, 0.878);
     text-decoration: none;
 }

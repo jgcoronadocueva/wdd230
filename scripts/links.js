@@ -1,6 +1,6 @@
 const baseURL = "https://jgcoronadocueva.github.io/wdd230/";
 const linksURL = `${baseURL}data/links.json`;
-const linkMenu = document.querySelector("#activity-links");
+const linkMenu = document.querySelector("#link-menu");
 
 async function apiFetch() {
     try {
@@ -20,14 +20,20 @@ async function apiFetch() {
 }
 
 function displayLinks(weeks) {
-    weeks.forEach((week) => {
+
+    weeks.weeks.forEach((week) => {
         let listElement = document.createElement("li");
         listElement.textContent = `${week.week}: `;
 
-        links.forEach((link) => {
+        week.links.forEach((link, index) => {
             let linkElement = document.createElement("a");
             linkElement.setAttribute('href', link.url);
-            linkElement.textContent = link.title;
+            if (index < week.links.length - 1) {
+                linkElement.textContent = `${link.title} | `;
+            }
+            else {
+                linkElement.textContent = `${link.title}`;
+            };
 
             listElement.appendChild(linkElement);
         });

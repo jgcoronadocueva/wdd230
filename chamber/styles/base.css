@@ -10,13 +10,68 @@ body {
 }
 
 header {
-    font-family: Cinzel Decorative, serif;
     font-size: 0.8rem;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 25px;
     background: #4D869C;
     color: white;
+}
+
+#siteName {
+    font-family: Cinzel Decorative, serif;
+}
+
+#siteName h1 {
+    text-align: left;
+    margin: 5px auto;
+}
+
+#hamButton {
+    font-size: 2rem;
+    background: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    border: none;
+    margin: 15px auto;
+}
+
+#hamButton::before {
+    content: "\2630";
+    color: white;
+}
+
+#hamButton.open::before {
+    content: "X";
+    color: white;
+}
+
+ul.menuLinks {
+    display: none;
+    list-style-type: none;
+}
+
+ul.open {
+    display: block;
+}
+
+nav a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+nav .active {
+    background-color: #e2d9c4b3;
+}
+
+nav a:hover {
+    background-color: #ECB159;
 }
 
 main {
@@ -24,28 +79,40 @@ main {
     padding-bottom: 1rem;
 }
 
-#contactInfo {
-    background-color: #7AB2B2;
-    color: white;
-    font-size: 1.1rem;
-    padding: .5rem;
+.hero {
+    position: relative;
+    text-align: center;
 }
 
-#contactInfo p {
-    padding: .2rem;
+.hero img {
+    height: auto;
+    width: 100%;
 }
 
-#devInfo {
-    background-color: #EEF7FF;
-    font-size: 0.8rem;
-    padding: .5rem;
-    padding-bottom: 1rem;
+.cta {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 15px;
+    background-color: rgba(68, 172, 160, 0.9);
+    border: none;
+    border-radius: 5px;
+    font-family: Russo One, serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.cta a {
+    color: rgba(255, 255, 255, 0.878);
+    text-decoration: none;
 }
 
 .card {
     padding: 1rem;
     background-color: #EEF7FF;
-    margin: 1.5rem;
+    margin: 1rem;
 }
 
 .card h2 {
@@ -54,8 +121,8 @@ main {
 }
 
 #spotlights {
-    padding: 2rem;
-    margin: 1.5rem;
+    padding: 1rem;
+    margin: 1rem;
     background-color: #EEF7FF;
 }
 
@@ -83,54 +150,20 @@ main {
     margin-bottom: 10px;
 }
 
-.hero {
-    position: relative;
-    text-align: center;
+#contactInfo {
+    background-color: #7AB2B2;
     color: white;
-}
-
-.cta {
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 20px 15px;
-    background-color: rgba(62, 208, 191, 0.6);
-    border: none;
-    border-radius: 5px;
-    font-family: Russo One, serif;
     font-size: 1.1rem;
-    text-transform: uppercase;
-    cursor: pointer;
+    padding: .5rem;
 }
 
-a {
-    color: rgba(255, 255, 255, 0.878);
-    text-decoration: none;
+#contactInfo p {
+    padding: .2rem;
 }
 
-#hamButton {
-    font-size: 2rem;
-    background: none;
-    cursor: pointer;
-    width: 100%;
-    text-align: right;
-    border: none;
-}
-
-#hamButton::before {
-    content: "\2630";
-}
-
-#hamButton.open::before {
-    content: "X"
-}
-
-ul.menuLinks {
-    display: none;
-    list-style-type: none;
-}
-
-ul.open {
-    display: block;
+#devInfo {
+    background-color: #EEF7FF;
+    font-size: 0.8rem;
+    padding: .5rem;
+    padding-bottom: 1rem;
 }

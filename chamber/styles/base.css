@@ -135,7 +135,7 @@ main {
 .event {
     text-align: left;
     background-color: #7AB2B2;
-    color: rgb(240, 240, 240);
+    color: rgb(3, 3, 3);
     padding: 0.5rem;
     max-width: 90%;
     margin: 0 auto;
@@ -149,7 +149,7 @@ main {
 
 #contactInfo {
     background-color: #7AB2B2;
-    color: white;
+    color: rgb(3, 3, 3);
     font-size: 1.1rem;
     padding: .5rem;
 }

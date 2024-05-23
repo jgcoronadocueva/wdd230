@@ -14,13 +14,13 @@ hamButton.addEventListener("click", () => {
 });
 
 const modeButton = document.querySelector("#mode");
+const body = document.querySelector("body");
 const main = document.querySelector("main");
 const header = document.querySelector("header");
 const footer = document.querySelector("footer");
 const navBar = document.querySelector("nav");
 const cardHeadings = document.querySelectorAll(".card h2");
 const card = document.querySelector(".card");
-//const navOptions = document.querySelector("nav a")
 const cardList = document.querySelector(".card ul");
 const cardLinks = document.querySelectorAll("main a");
 const navLinks = document.querySelectorAll("nav a");
@@ -45,6 +45,7 @@ modeButton.addEventListener("click", () => {
             });
         });
         navActive.style.background = "#606470";
+        body.style.background = "#393e46";
         main.style.background = "#393e46";
         main.style.color = "#fff";
         card.style.background = "#393e46";
@@ -80,6 +81,7 @@ modeButton.addEventListener("click", () => {
             });
         });
         navActive.style.background = "#e2d9c4b3";
+        body.style.background = "#fff";
         main.style.background = "#fff";
         main.style.color = "#000";
         card.style.background = "#fffdfae7";

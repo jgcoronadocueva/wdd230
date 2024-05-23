@@ -4,19 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gonzalo Coronado - WDD 230 - Web Frontend Development</title>
+    <title>Samborondon Chamber of Commerce | Home</title>
     <meta name="description"
-        content="WDD 230 - Web Frontend Development assignment portal for Gonzalo Coronado who is an student at BYU-Idaho">
+        content="Welcome to the Samborondon Chamber of Commerce website. Here you can find information about local businesses, upcoming events, and resources for entrepreneurs.">
     <meta name="author" content="Gonzalo Coronado">
-    <meta property="og:title" content="Gonzalo Coronado - WDD 230 - Web Frontend Development">
+    <meta property="og:title" content="Samborondon Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:description" content="Web Frontend Development assignment portal for Gonzalo Coronado">
     <meta property="og:image" content="https://i.pinimg.com/564x/2c/89/06/2c8906c8ef39d93b8fb96ca81f9e84eb.jpg">
-    <meta property="og:url" content="https://jgcoronadocueva.github.io/wdd230/index.html">
+    <meta property="og:url" content="https://jgcoronadocueva.github.io/wdd230/chamber/index.html">
     <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Noto+Sans&family=Cinzel+Decorative&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit&family=Noto+Sans&family=Russo+One&family=Cinzel+Decorative&display=swap"
         rel="stylesheet">
     <link href="styles/normalize.css" rel="stylesheet">
     <link href="styles/base.css" rel="stylesheet">
@@ -25,10 +26,11 @@
 
 <body>
     <header>
-        <div id="site-name">
+        <div id="siteName">
             <h1>Samborondon</h1>
             <h2>Chamber of Commerce</h2>
         </div>
+
         <nav>
             <button id="hamButton"></button>
             <ul class="menuLinks">
@@ -41,61 +43,73 @@
     </header>
 
     <main>
-        <!-- Hero Image -->
         <section class="hero">
             <img src="images/samborondon.jpg" alt="Hero Image" height="200px" width="400px">
             <button class="cta">
-                <a href="#" class="join-button">Join the Chamber</a>
+                <a href="#" id="joinButton">Join the Chamber</a>
             </button>
         </section>
 
-
-        <!-- Current Events Section -->
         <section id="events" class="card">
             <h2>Events</h2>
-            <h2>Events</h2>
-            <h2>Events</h2>
-            <h2>Events</h2>
-            <!-- Add event listings here -->
-            <div id="event" class="card">
-                <h3>Event Title</h3>
-                <p>Date: January 1, 2024</p>
+            <div class="event">
+                <h3>Event Title - Date</h3>
                 <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-            <!-- Add more events as needed -->
+            <div class="event">
+                <h3>Event Title - Date</h3>
+                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="event">
+                <h3>Event Title - Date</h3>
+                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
         </section>
 
-        <!-- Weather Card Section -->
         <section id="weather" class="card">
             <h2>Local Weather</h2>
-            <!-- Add weather card-->
-
-            <div class="weather-card">
-                <p>Current Temperature: 72°F</p>
-                <p>Conditions: Sunny</p>
-                <!-- Add weather icon here -->
-            </div>
+            <figure>
+                <img href="#">
+                <figcaption></figcaption>
+            </figure>
+            <p>Humidity:</p>
+            <p>Wind Chill:</p>
         </section>
 
-        <!-- Company Spotlights Section -->
         <section id="spotlights">
             <h2>Company Spotlights</h2>
-            <!-- Add spotlight advertisements here -->
             <div class="card">
-                <img src="company1-logo.png" alt="Company 1 Logo">
+                <img src="#" alt="Company 1 Logo">
+                <h3>Thankful Transport</h3>
                 <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <div class="card">
-                <img src="company1-logo.png" alt="Company 1 Logo">
+                <img src="#" alt="Company 2 Logo">
+                <h3>Thankful Transport</h3>
                 <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <div class="card">
-                <img src="company1-logo.png" alt="Company 1 Logo">
+                <img src="#" alt="Company 3 Logo">
+                <h3>Thankful Transport</h3>
                 <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
         </section>
-
-        <!-- Add any necessary JavaScript or script links here -->
     </main>
-    <footer></footer>
+
+    <footer>
+        <section id="contactInfo">
+            <p>Samborondon Chamber of Commerce</p>
+            <p>Address</p>
+            <p>Phone Number</p>
+        </section>
+
+        <section id="devInfo">
+            <p>&copy; <span id="currentYear"></span> Gonzalo Coronado | WDD 230 Project
+            </p>
+            <p id="lastModified"></p>
+        </section>
+    </footer>
+
+    <script src="scripts/index.js"></script>
+
 </body>

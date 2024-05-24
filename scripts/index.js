@@ -27,7 +27,6 @@ const navLinks = document.querySelectorAll("nav a");
 const navActive = document.querySelector("nav .active");
 const cardDivs = document.querySelectorAll(".card div");
 
-
 modeButton.addEventListener("click", () => {
     if (modeButton.textContent.includes("🌛")) {
         header.style.background = "#2d4059";

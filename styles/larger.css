@@ -24,7 +24,7 @@
     }
 
     #profileowner {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     main h1 {
@@ -44,9 +44,8 @@
     }
 
     iframe {
+        display: block;
         max-width: 960px;
-        width: 100%;
         height: 400px;
-        text-align: center;
     }
 }

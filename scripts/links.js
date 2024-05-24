@@ -1,3 +1,4 @@
+
 const baseURL = "https://jgcoronadocueva.github.io/wdd230/";
 const linksURL = `${baseURL}data/links.json`;
 const linkMenu = document.querySelector("#link-menu");

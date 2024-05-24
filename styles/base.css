@@ -41,7 +41,7 @@ header {
 }
 
 nav {
-    background-color: #87ADDE;
+    background-color: #5AB2FF;
 }
 
 #hamButton {
@@ -90,7 +90,6 @@ nav a:hover {
 
 main {
     background-color: white;
-    padding: 1rem;
     margin: 0 auto;
 }
 
@@ -109,6 +108,7 @@ main a {
     border: 1px solid rgba(235, 217, 217, 1.2);
     border-radius: 15px;
     overflow: hidden;
+    margin: 1rem;
 }
 
 #information {
@@ -126,7 +126,7 @@ main a {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .card h2 {
@@ -140,11 +140,6 @@ main a {
     padding: 1rem 2rem;
 }
 
-.card div {
-    padding: 1rem;
-    text-align: center;
-}
-
 footer {
     background-color: #DEB887;
     text-align: center;
@@ -155,23 +150,23 @@ footer {
 
 .hero {
     position: relative;
-    border: 1px solid rgba(0, 0, 0, .1);
 }
 
 .hero img {
-    width: 100%;
+    width: 150%;
     height: auto;
 }
 
 .herolabel {
     position: absolute;
-    top: 60px;
-    left: 60px;
-    background: radial-gradient(#fff, #4D5B97);
+    top: 20px;
+    left: 20px;
+    background: radial-gradient(#fff, #5e678ca8);
     border: 1px solid rgba(0, 0, 0, .75);
-    padding: 1rem;
-    box-shadow: 0 0 3rem #fff;
-    opacity: 0.75;
+    padding: .5rem;
+    box-shadow: 0 0 2rem #fff;
+    font-family: Patua One, sans-serif;
+    font-size: .8rem;
 }
 
 iframe {

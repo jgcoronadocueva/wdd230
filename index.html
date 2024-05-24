@@ -25,7 +25,7 @@
 
 <body>
     <header>
-        <img id="profilepic" src="images/profilepic (1).webp" alt="Gonzalo profile picture">
+        <img id="profilepic" src="images/profilepic.webp" alt="Gonzalo profile picture">
         <span id="profileowner">Gonzalo Coronado</span>
         <button id="mode">🌛</button>
     </header>
@@ -41,11 +41,10 @@
     <main>
         <div class="hero">
             <picture>
-                <source srcset="images/rome-italy-temple-mobile.webp" media="(max-width: 400px)">
-                <source srcset="images/rome-italy-temple-desktop.webp" media="(max-width: 960px)">
-                <img src="images/rome-italy-temple-desktop.webp">
+                <source srcset="images/guayaquil-temple-mobile.webp" media="(max-width: 500px)">
+                <img src="images/guayaquil-temple-desktop.webp" alt="Guayaquil Ecuador temple">
             </picture>
-            <span class="herolabel">Guayaquil Ecuador Temple</p></span>
+            <span class="herolabel">Guayaquil Ecuador Temple</span>
         </div>
 
         <h1>WDD 230: Web Frontend Development</h1>
@@ -56,12 +55,13 @@
 
         <section id="information" class="card">
             <h2>Information</h2>
-            <span id="weather">
-                <img id="weather-icon" src="" alt="">
+            <div id="weather">
+                <img id="weather-icon" src="placeholder.webp" alt="">
                 <p id="temperature"></p>
                 <p id="weather-description"></p>
-            </span>
-            <span class="label">Number of Visits: <div id="visits"></div></span>
+            </div>
+            <div class="label">Number of Visits: <p id="visits"></p>
+            </div>
         </section>
     </main>
     <iframe

@@ -156,10 +156,10 @@ function displayResults(data) {
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`
     weatherIcon.setAttribute("src", iconsrc)
     weatherIcon.setAttribute("alt", "current weather icon")
-    temperature.innerHTML = `${data.main.temp}&deg;F`
+    temperature.innerHTML = `${data.main.temp}&deg;F - `
     let description = data.weather[0].description;
 
-    weatherDescription.textContent = ` - ${description}`;
+    weatherDescription.textContent = `${description}`;
 }
 
 apiFetch();

@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samborondon Chamber of Commerce | Home</title>
+    <title>Join the Chamber | Samborondon Chamber of Commerce | Samborondon, Ecuador </title>
     <meta name="description"
         content="Welcome to the Samborondon Chamber of Commerce website. Here you can find information about local businesses, upcoming events, and resources for entrepreneurs.">
     <meta name="author" content="Gonzalo Coronado">
     <meta property="og:title" content="Samborondon Chamber of Commerce">
     <meta property="og:type" content="website">
-    <meta property="og:description" content="Web Frontend Development assignment portal for Gonzalo Coronado">
+    <meta property="og:description"
+        content="Discover unparalleled business support and networking opportunities with Samborondon Chamber of Commerce. Join our vibrant community of entrepreneurs and professionals to access exclusive resources, events, and advocacy initiatives.">
     <meta property="og:image" content="https://i.pinimg.com/564x/2c/89/06/2c8906c8ef39d93b8fb96ca81f9e84eb.jpg">
     <meta property="og:url" content="https://jgcoronadocueva.github.io/wdd230/chamber/index.html">
     <link rel="icon" href="favicon.ico">
@@ -21,8 +22,7 @@
         rel="stylesheet">
     <link href="styles/normalize.css" rel="stylesheet">
     <link href="styles/base.css" rel="stylesheet">
-    <!-- link href="styles/base.css" rel="stylesheet" -->
-    <!--link href="styles/larger.css" rel="stylesheet"-->
+    <link href="styles/larger.css" rel="stylesheet">
 </head>
 
 <body>
@@ -40,79 +40,17 @@
         </nav>
     </header>
 
-    <main id="join">
-        <h1>Membership Application</h1>
-        <form method="get" action="thankyou.html" class="web-form">
-            <fieldset>
-                <legend>Representative's Information</legend>
-                <label>First Name* <input type="text" name="fname" id="fname" required></label>
-                <label>Last Name* <input type="text" name="lname" id="lname" required></label>
-                <label>Title/Position* <input type="text" name="title" id="title" pattern="[a-zA-Z\- ]{7,}"
-                        required></label>
-                <label>Email* <input type="email" name="email" id="email" placeholder="someone@gmail.com"
-                        required></label>
-                <label>Phone <input type="tel" name="phone" id="phone" placeholder="5555555555" required></label>
-            </fieldset>
-            <fieldset>
-                <legend>Organization Information</legend>
-                <label>Business/Organization Name <input type="text" name="busname" id="busname" required></label>
-                <label>Membership Level
-                    <select name="membership">
-                        <option value="">Please Select</option>
-                        <option value="np">NP Membership</option>
-                        <option value="bronze">Bronze Membership</option>
-                        <option value="silver">Silver Membership</option>
-                        <option value="gold">Gold Membership</option>
-                </label>
-                <label>Business/Organization Description <textarea name="busdescription"
-                        id="busdescription"></textarea></label>
-            </fieldset>
-            <input type="hidden" id="timestamp" name="timestamp">
-            <input type="submit" value="Submit Information">
-        </form>
-
-        <div id="benefits">
-            <h4>Membership Level Benefits *</h4>
-            <div class="info">
-                <div>
-                    <h5>NP (Non-profit)</h5>
-                    <ul>
-                        <li>Directory Listing</li>
-                        <li>Business Trainings</li>
-                        <li>Sponsorships</li>
-                    </ul>
-                    <h5>Bronze</h5>
-                    <ul>
-                        <li>Directory Listing</li>
-                        <li>Business Trainings</li>
-                    </ul>
-                    <h5>Silver</h5>
-                    <ul>
-                        <li>Directory Listing</li>
-                        <li>Business Trainings</li>
-                        <li>Sponsorships</li>
-                        <li>Social Media Posts</li>
-                    </ul>
-                    <h5>Gold</h5>
-                    <ul>
-                        <li>Directory Listing</li>
-                        <li>Business Trainings</li>
-                        <li>Sponsorships</li>
-                        <li>Social Media Posts</li>
-                        <li>Media Publication & Advertisements</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        </div>
-
+    <main id="main-thankyou">
+        <h1>Thank You!</h1>
+        <p>Your information has been successfully submitted.</p>
     </main>
 
     <footer>
         <div id="contactInfo">
             <p>Samborondon Chamber of Commerce</p>
-            <p>Address</p>
-            <p>Phone Number</p>
+            <p>Av. Leon Febres Cordero Vistana 1000</p>
+            <p>info@sambochamber.com</p>
+            <p>+(593)989915418</p>
         </div>
 
         <div id="devInfo">

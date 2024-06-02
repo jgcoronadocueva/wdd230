@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samborondon Chamber of Commerce | Home</title>
+    <meta name="description"
+        content="Welcome to the Samborondon Chamber of Commerce website. Here you can find information about local businesses, upcoming events, and resources for entrepreneurs.">
+    <meta name="author" content="Gonzalo Coronado">
+    <meta property="og:title" content="Samborondon Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Web Frontend Development assignment portal for Gonzalo Coronado">
+    <meta property="og:image" content="https://i.pinimg.com/564x/2c/89/06/2c8906c8ef39d93b8fb96ca81f9e84eb.jpg">
+    <meta property="og:url" content="https://jgcoronadocueva.github.io/wdd230/chamber/index.html">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit&family=Noto+Sans&family=Russo+One&family=Cinzel+Decorative&display=swap"
+        rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="siteName">
+            <h1>Samborondon Chamber of Commerce</h1>
+        </div>
+
+        <nav>
+            <button id="hamButton"></button>
+            <ul class="menuLinks">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="discover-main">
+        <aside class="sidebar" id="discover-sidebar">
+            <section class=sidebar-content id="demographics">
+                <h2>Demographic Snapshot</h2>
+                <p>Samborondón, nestled in the heart of the Guayas province, embodies Ecuador's vibrant diversity and
+                    entrepreneurial spirit. With a population of over 11,030 residents, our
+                    community represents a dynamic blend of ages and backgrounds. From young families seeking
+                    quality education to seasoned professionals and retirees enjoying a thriving lifestyle, Samborondón
+                    welcomes all with open arms.</p>
+            </section>
+            <section class=sidebar-content id="statistics">
+                <h2>Economic Vitality</h2>
+                <p>Samborondón is a hive of economic opportunities, serving as the region's commercial hub. From
+                    historic marketplaces to cutting-edge shops, our busy streets are teeming with life. The
+                    advantageous position of our region, coupled with its strong infrastructure and encouraging business
+                    atmosphere, attracts investors and entrepreneurs. Samborondón provides the ideal platform for
+                    success whether you're starting a new company, growing an existing one, or looking for new
+                    endeavors.</p>
+            </section>
+
+            <section class=sidebar-content id="attractions">
+                <h2>Vibrant Attractions</h2>
+                <ul>
+                    <li>Parque Histórico Guayaquil</li>
+                    <p>Just a stone's throw away, the Parque Histórico Guayaquil beckons with its immersive journey
+                        through Ecuador's history. From colonial-era buildings to interactive exhibits, the park
+                        provides a fascinating glimpse into the country's rich cultural heritage.</p>
+                    <li>La Piazza Samborondón</li>
+                    <p>For entrepreneurs and investors, La Piazza Samborondón serves as a dynamic commercial center,
+                        boasting a diverse mix of shops, restaurants, and entertainment venues. With its prime location
+                        and bustling atmosphere, it's the ideal place to establish and grow your business.</p>
+                    <li>Attraction 3</li>
+                </ul>
+            </section>
+        </aside>
+
+        <div class="gallery" id="photo-gallery">
+            <figure class="photo">
+                <img src="images/alhambra.webp" alt="Alhambra Shopping" loading="lazy">
+                <figcaption>Alhambra Shopping</figcaption>
+            </figure>
+            <figure class="photo">
+                <img src="images/alhambra.webp" alt="Alhambra Shopping" loading="lazy">
+                <figcaption>Alhambra Shopping</figcaption>
+            </figure>
+            <figure class="photo">
+                <img src="images/alhambra.webp" alt="Alhambra Shopping" loading="lazy">
+                <figcaption>Alhambra Shopping</figcaption>
+            </figure>
+            <figure class="photo">
+                <img src="images/alhambra.webp" alt="Alhambra Shopping" loading="lazy">
+                <figcaption>Alhambra Shopping</figcaption>
+            </figure>
+            <figure class="photo">
+                <img src="images/alhambra.webp" alt="Alhambra Shopping" loading="lazy">
+                <figcaption>Alhambra Shopping</figcaption>
+            </figure>
+            <figure class="photo">
+                <img src="images/alhambra.webp" alt="Alhambra Shopping" loading="lazy">
+                <figcaption>Alhambra Shopping</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <div id="contactInfo">
+            <p>Samborondon Chamber of Commerce</p>
+            <p>Address</p>
+            <p>Phone Number</p>
+        </div>
+
+        <div id="devInfo">
+            <p>&copy; <span id="currentYear"></span> Gonzalo Coronado | WDD 230 Project
+            </p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+
+    <script src="scripts/index.js"></script>
+
+</body>

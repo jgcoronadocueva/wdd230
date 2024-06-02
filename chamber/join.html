@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samborondon Chamber of Commerce | Home</title>
+    <meta name="description"
+        content="Welcome to the Samborondon Chamber of Commerce website. Here you can find information about local businesses, upcoming events, and resources for entrepreneurs.">
+    <meta name="author" content="Gonzalo Coronado">
+    <meta property="og:title" content="Samborondon Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Web Frontend Development assignment portal for Gonzalo Coronado">
+    <meta property="og:image" content="https://i.pinimg.com/564x/2c/89/06/2c8906c8ef39d93b8fb96ca81f9e84eb.jpg">
+    <meta property="og:url" content="https://jgcoronadocueva.github.io/wdd230/chamber/index.html">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit&family=Noto+Sans&family=Russo+One&family=Cinzel+Decorative&display=swap"
+        rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img id=logo src="images/chamber-logo.webp" alt="Samborondon chamber of commerce logo" width="100" height="100">
+        <h1>Samborondon Chamber of Commerce</h1>
+        <button id="ham-button"></button>
+        <nav>
+            <ul class="menu-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-join">
+        <section id="membership-subscription">
+            <h2>Membership Information</h2>
+            <form method="get" action="thankyou.html" class="web-form">
+                <fieldset>
+                    <legend>Representative's Information</legend>
+                    <label>First Name* <input type="text" name="fname" id="fname" required></label>
+                    <label>Last Name* <input type="text" name="lname" id="lname" required></label>
+                    <label>Title/Position* <input type="text" name="title" id="title" pattern="[a-zA-Z\- ]{7,}"
+                            required></label>
+                    <label>Email* <input type="email" name="email" id="email" placeholder="someone@gmail.com"
+                            required></label>
+                    <label>Phone <input type="tel" name="phone" id="phone" placeholder="5555555555" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Business Information</legend>
+                    <label>Business Name <input type="text" name="busname" id="busname" required></label>
+                    <label>Membership Level
+                        <select name="membership">
+                            <option value="">Please Select</option>
+                            <option value="np">NP Membership</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                    </label>
+                    <label>Business Description <textarea name="busdescription" id="busdescription"></textarea></label>
+                </fieldset>
+                <input type="hidden" id="timestamp" name="timestamp">
+                <input type="submit" value="Submit Information">
+            </form>
+        </section>
+        <section id="membership-benefits">
+            <h2>Membership Level Benefits</h2>
+
+            <div class="membership-benefits-card">
+                <h3>Non-profit (NP) - Free</h3>
+                <ul>
+                    <li>Access to Chamber events and networking opportunities.</li>
+                    <li>Inclusion in the Chamber's online directory of non-profit organizations.</li>
+                    <li>Access to educational resources and workshops on topics relevant to non-profit management.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="membership-benefits-card">
+                <h3>Bronze Membership - $100</h3>
+                <ul>
+                    <li>Priority placement in the Chamber's online directory.</li>
+                    <li>Access to member-only webinars or seminars on business topics.</li>
+                    <li>Promotion of Bronze members in the Chamber's newsletter or social media channels.</li>
+                </ul>
+            </div>
+
+            <div class="membership-benefits-card">
+                <h3>Silver - $300</h3>
+                <ul>
+                    <li>Featured listing in the Chamber's online directory with enhanced visibility.</li>
+                    <li>Access to Chamber's marketing and advertising resources, such as discounted rates for ad
+                        placements on the Chamber's website or newsletter.</li>
+                    <li>Priority consideration for sponsorship opportunities at Chamber events.</li>
+                </ul>
+            </div>
+
+            <div class="membership-benefits-card">
+                <h3>Gold - $600</h3>
+                <ul>
+                    <li>Premium placement in the Chamber's online directory, with a spotlight position on the homepage.
+                    </li>
+                    <li>VIP access to Chamber events, including exclusive dinners or receptions with prominent business
+                        leaders.</li>
+                    <li>Personalized consultation sessions with Chamber staff on business development strategies or
+                        advocacy initiatives.</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div id="contactInfo">
+            <p>Samborondon Chamber of Commerce</p>
+            <p>Address</p>
+            <p>Phone Number</p>
+        </div>
+
+        <div id="devInfo">
+            <p>&copy; <span id="currentYear"></span> Gonzalo Coronado | WDD 230 Project
+            </p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+
+    <script src="scripts/index.js"></script>
+
+</body>

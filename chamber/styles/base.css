@@ -4,57 +4,95 @@
     box-sizing: border-box;
 }
 
+:root {
+    /*COLORS*/
+    --primary-background-color: #4D869C;
+    --secondary-background-color: #EEF7FF;
+    --cta-button-background-color: #44aca0e6;
+    --hover-background-color: #e9a44a;
+    --primary-text-color: #000;
+    --secondary-text-color: #ffffff;
+
+    /*FONTS*/
+    --cta-button-font-type: Noto Sans, sans-serif;
+}
+
+
+/*ALL PAGES*/
 body {
-    text-align: center;
     font-family: Noto Sans, sans-serif;
 }
 
 header {
-    font-size: 0.8rem;
     display: flex;
-    justify-content: space-between;
-    padding: 25px;
-    background: #4D869C;
-    color: white;
+    align-items: center;
+    padding: 10px 20px;
+    background: var(--primary-background-color);
+    color: var(--secondary-text-color);
 }
 
-#siteName {
-    font-family: Cinzel Decorative, serif;
+#logo {
+    width: 70px;
+    height: 70px;
+    margin-right: 1rem;
 }
 
-#siteName h1 {
+h1 {
     text-align: left;
-    margin: 5px auto;
+    font-family: Cinzel Decorative, serif;
+    font-size: 1.2rem;
 }
 
-#hamButton {
-    font-size: 2rem;
-    background: none;
-    cursor: pointer;
-    width: 100%;
-    text-align: right;
-    border: none;
-    margin: 15px auto;
-}
-
-#hamButton::before {
-    content: "\2630";
-    color: white;
-}
-
-#hamButton.open::before {
-    content: "X";
-    color: white;
-}
-
-ul.menuLinks {
-    display: none;
-    list-style-type: none;
-}
-
-ul.open {
+#ham-button {
     display: block;
+    font-size: 2rem;
+    border: 0;
+    background: none;
+    right: 1rem;
+    top: 1rem;
+    color: var(--text-color-1);
+    float: left;
 }
+
+
+
+.menu-links {
+    list-style: none;
+    display: none;
+    list-style: none;
+    width: 100%;
+}
+
+.menu-links.open {
+    display: inline-block;
+}
+
+.menu-links.open li {
+    display: block;
+    text-align: center;
+}
+
+
+
+#ham-button::before {
+    content: "☰";
+}
+
+#ham-button.open::before {
+    content: "X";
+}
+
+/*
+nav a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
 
 nav a {
     display: block;
@@ -66,16 +104,61 @@ nav a {
     font-size: 1.2rem;
 }
 
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: #333;
+	color: #fff;
+}
+
+/*
+.menu-links {
+    display: none;
+    list-style-type: none;
+}
+
+
+.menu-links.open {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+
 nav .active {
     background-color: #e2d9c4b3;
 }
 
-nav a:hover {
-    background-color: #ECB159;
+
+/*FOOTER*/
+#contactInfo {
+    background-color: #7AB2B2;
+    color: rgb(3, 3, 3);
+    font-size: 1.1rem;
+    padding: .5rem;
 }
 
+footer {
+    text-align: center;
+}
+
+#contactInfo p {
+    padding: .2rem;
+}
+
+#devInfo {
+    background-color: #EEF7FF;
+    font-size: 0.8rem;
+    padding: .5rem;
+    padding-bottom: 1rem;
+}
+
+
+/*MAIN SECTION*/
 main {
-    background-color: #CDE8E5;
+    background-color: #ffffff;
     padding-bottom: 1rem;
 }
 
@@ -95,10 +178,10 @@ main {
     left: 50%;
     transform: translateX(-50%);
     padding: 15px 15px;
-    background-color: rgba(68, 172, 160, 0.9);
+    background-color: var(--cta-button-background-color);
     border: none;
     border-radius: 5px;
-    font-family: Russo One, serif;
+    font-family: var(--cta-button-font-type);
     font-size: 1rem;
     text-transform: uppercase;
     cursor: pointer;
@@ -147,20 +230,170 @@ main {
     margin-bottom: 10px;
 }
 
-#contactInfo {
-    background-color: #7AB2B2;
-    color: rgb(3, 3, 3);
-    font-size: 1.1rem;
+
+
+/*DISCOVER PAGE*/
+
+
+
+.gallery {
+    flex: 1 1 100%;
+    order: 1;
+}
+
+.sidebar-content {
+    text-align: left;
+    padding: 1rem;
+    margin-bottom: 20px;
+}
+
+.sidebar-content h2 {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.sidebar-content p {
+    margin-bottom: 10px;
+}
+
+.sidebar-content ul {
+    padding-left: 20px;
+    margin-top: 0;
+}
+
+.sidebar-content ul li {
+    margin-bottom: 5px;
+}
+
+/* Styling for gallery */
+.photo {
+    margin-bottom: 20px;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.photo figcaption {
+    text-align: center;
+    font-style: italic;
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+
+
+/*JOIN PAGE*/
+#main-join {
+    display: block;
     padding: .5rem;
 }
 
-#contactInfo p {
-    padding: .2rem;
+#membership-subscription h2 {
+    margin-left: 15px;
+    margin-bottom: 10px;
 }
 
-#devInfo {
-    background-color: #EEF7FF;
-    font-size: 0.8rem;
+#membership-benefits {
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#membership-benefits h2 {
+    text-align: center;
+}
+
+.membership-benefits-card {
+    background-color: #f3f2ed;
     padding: .5rem;
-    padding-bottom: 1rem;
+    padding-left: 2rem;
+    margin: 1rem 0;
+    box-shadow: 0px 0px 5px var(--primary-background-color);
+    border-radius: 15px;
+}
+
+.membership-benefits-card h3 {
+    text-align: center;
+}
+
+.membership-benefits-card ul {
+    padding: .5rem;
+}
+
+.membership-benefits-card ul li {
+    line-height: 1.5rem;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+input[type="submit"] {
+    background-color: var(--cta-button-background-color);
+    font-family: var(--cta-button-font-type);
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--hover-background-color);
+}
+
+input[type="submit"]:focus {
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0px 0px 5px var(--primary-background-color);
 }

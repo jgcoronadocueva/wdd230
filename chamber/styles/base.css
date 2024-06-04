@@ -403,13 +403,8 @@ p {
 }
 
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-main {
+/*DIRECTORY PAGE*/
+#main-directory {
     margin: 0 auto;
     padding: 0.5rem;
     max-width: 700px;
@@ -417,7 +412,7 @@ main {
     font-family: Roboto, Helvetica, sans-serif;
 }
 
-.menu {
+#directory-menu {
     margin: 1rem auto;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0.5rem;
@@ -425,12 +420,12 @@ main {
     text-align: center;
 }
 
-.menu button {
+#directory-menu button {
     padding: 1rem;
     font-weight: 700;
 }
 
-section {
+#directory {
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0.5rem;
     background-color: #eee;
@@ -456,7 +451,7 @@ section {
     margin: 0.1rem;
 }
 
-.grid h3 {
+.grid h2 {
     font-family: "Caveat", cursive;
 }
 

@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /*DIRECTORY PAGE*/
-const directoryURL = "https://jgcoronadocueva.github.io/wdd230/data/members.json";
+const directoryURL = "https://jgcoronadocueva.github.io/wdd230/chamber/data/members.json";
 const directory = document.querySelector("#directory");
 
 async function getChamberMembers() {
@@ -48,7 +48,7 @@ async function getChamberMembers() {
     displayChamberMembers(data.companies);
 }
 
-const displayChamberMembers = (company) => {
+function displayChamberMembers(companies) {
     companies.forEach((company) => {
         let card = document.createElement("section");
         let logo = document.createElement("img");
@@ -58,7 +58,7 @@ const displayChamberMembers = (company) => {
         let membership = document.createElement("h4");
 
         logo.setAttribute("src", company.logo);
-        logo.setAttribute("alt", `${business.name} logo`);
+        logo.setAttribute("alt", `${company.name} logo`);
         logo.setAttribute("loading", "lazy");
         logo.setAttribute("width", "auto");
         logo.setAttribute("height", "auto");
@@ -67,7 +67,7 @@ const displayChamberMembers = (company) => {
         address.textContent = `${company.address}`;
         membership.textContent = `${company.membership} Membership`;
         website.setAttribute("href", `${company.url}`);
-        website.textContent = business.url;
+        website.textContent = company.url;
 
         card.appendChild(logo);
         card.appendChild(name);

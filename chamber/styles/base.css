@@ -26,23 +26,26 @@ body {
 }
 
 nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
     background-color: #333;
     color: #fff;
-    padding: 10px 0;
 }
 
-.header-container {
+#container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    width: 30%;
 }
 
 #logo {
     color: #fff;
     text-decoration: none;
+    margin-left: 30px;
+    margin-right: 15px;
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -57,7 +60,10 @@ nav {
 }
 
 .menu-links {
-    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
     margin: 0;
     padding: 0;
 }
@@ -68,18 +74,21 @@ nav {
 }
 
 .menu-links li a {
+    display: inline-block;
     color: #fff;
+    padding: 10px 20px;
     text-decoration: none;
 }
 
 @media only screen and (max-width: 768px) {
-    .header-container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
 
     #logo {
         margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 1rem;
+        width: 50%;
     }
 
     #hamburger-button {
@@ -630,8 +639,9 @@ section a {
     letter-spacing: 1.1pt;
 }
 
+/*
 img {
     height: 75px;
     max-width: 100%;
-    /* Images are jerks - Seattle*/
-}
+    /* Images are jerks - Seattle
+}*/

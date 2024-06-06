@@ -510,9 +510,7 @@ p {
     box-shadow: 0 0 10px var(--primary-background-color);
 }
 
-.grid section>* {
-    margin: 0.5rem;
-}
+
 
 .grid h2 {
     font-family: var(--secondary-font-family);
@@ -522,13 +520,14 @@ p {
     display: flex;
     flex-direction: column;
     font-size: 1rem;
+    align-items: center;
 }
 
 .list section {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 0;
-    padding: 0.25rem;
+    padding: 0.5rem;
     justify-items: left;
 }
 

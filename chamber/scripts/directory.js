@@ -26,7 +26,7 @@ function displayChamberMembers(companies) {
 
         name.textContent = `${company.name}`;
         address.textContent = `${company.address}`;
-        membership.textContent = `${company.membership} Membership`;
+        membership.textContent = `${company.membership_level} Membership`;
         website.setAttribute("href", `${company.url}`);
         website.textContent = company.url;
 

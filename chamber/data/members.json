@@ -6,7 +6,7 @@
             "phone": "+593 9 8765 4321",
             "url": "https://www.bittek.ec",
             "logo": "images/auto-value-logo_100x100.webp",
-            "membership level": "Gold"
+            "membership_level": "Gold"
         },
         {
             "name": "Safran",
@@ -14,7 +14,7 @@
             "phone": "+593 9 8765 4322",
             "url": "https://www.safran.ec",
             "logo": "images/auto-value-logo_100x100.webp",
-            "membership level": "Silver"
+            "membership_level": "Silver"
         },
         {
             "name": "Sun Peaks Resort",
@@ -22,7 +22,7 @@
             "phone": "+593 9 8765 4323",
             "url": "https://www.sunpeaksresort.ec",
             "logo": "images/auto-value-logo_100x100.webp",
-            "membership level": "Bronze"
+            "membership_level": "Bronze"
         },
         {
             "name": "Agulla & Baccetti",
@@ -30,7 +30,7 @@
             "phone": "+593 9 8765 4324",
             "url": "https://www.agullabaccetti.ec",
             "logo": "images/auto-value-logo_100x100.webp",
-            "membership level": "Gold"
+            "membership_level": "Gold"
         },
         {
             "name": "Univex",
@@ -38,7 +38,7 @@
             "phone": "+593 9 8765 4325",
             "url": "https://www.univex.ec",
             "logo": "images/auto-value-logo_100x100.webp",
-            "membership level": "Silver"
+            "membership_level": "Silver"
         },
         {
             "name": "Reichhold",
@@ -46,7 +46,7 @@
             "phone": "+593 9 8765 4326",
             "url": "https://www.reichhold.ec",
             "logo": "images/auto-value-logo_100x100.webp",
-            "membership level": "Bronze"
+            "membership_level": "Bronze"
         },
         {
             "name": "Bowers and Merena Galleries",
@@ -54,7 +54,7 @@
             "phone": "+593 9 8765 4327",
             "url": "https://www.bowersmerena.ec",
             "logo": "images/auto-value-logo_100x100.webp",
-            "membership level": "Gold"
+            "membership_level": "Gold"
         },
         {
             "name": "Butler",
@@ -62,7 +62,7 @@
             "phone": "+593 9 8765 4328",
             "url": "https://www.butler.ec",
             "logo": "images/auto-value-logo_100x100.webp",
-            "membership level": "Silver"
+            "membership_level": "Silver"
         },
         {
             "name": "Auto Value",
@@ -70,7 +70,7 @@
             "phone": "+593 9 8765 4329",
             "url": "https://www.autovalue.ec",
             "logo": "images/auto-value-logo_100x100.webp",
-            "membership level": "Bronze"
+            "membership_level": "Bronze"
         }
     ]
 }

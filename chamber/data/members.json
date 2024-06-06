@@ -5,7 +5,7 @@
             "address": "123 Tech Park Avenue, Samborondón, Ecuador",
             "phone": "+593 9 8765 4321",
             "url": "https://www.bittek.ec",
-            "logo": "images/bittek-logo.webp",
+            "logo": "images/auto-value-logo_100x100.webp",
             "membership level": "Gold"
         },
         {
@@ -13,7 +13,7 @@
             "address": "456 Aerospace Street, Samborondón, Ecuador",
             "phone": "+593 9 8765 4322",
             "url": "https://www.safran.ec",
-            "logo": "images/bittek-logo.webp",
+            "logo": "images/auto-value-logo_100x100.webp",
             "membership level": "Silver"
         },
         {
@@ -21,7 +21,7 @@
             "address": "789 Mountain View Road, Samborondón, Ecuador",
             "phone": "+593 9 8765 4323",
             "url": "https://www.sunpeaksresort.ec",
-            "logo": "images/bittek-logo.webp",
+            "logo": "images/auto-value-logo_100x100.webp",
             "membership level": "Bronze"
         },
         {
@@ -29,7 +29,7 @@
             "address": "101 Design Boulevard, Samborondón, Ecuador",
             "phone": "+593 9 8765 4324",
             "url": "https://www.agullabaccetti.ec",
-            "logo": "images/bittek-logo.webp",
+            "logo": "images/auto-value-logo_100x100.webp",
             "membership level": "Gold"
         },
         {
@@ -37,7 +37,7 @@
             "address": "202 Science Avenue, Samborondón, Ecuador",
             "phone": "+593 9 8765 4325",
             "url": "https://www.univex.ec",
-            "logo": "images/bittek-logo.webp",
+            "logo": "images/auto-value-logo_100x100.webp",
             "membership level": "Silver"
         },
         {
@@ -45,7 +45,7 @@
             "address": "303 Chemical Street, Samborondón, Ecuador",
             "phone": "+593 9 8765 4326",
             "url": "https://www.reichhold.ec",
-            "logo": "images/bittek-logo.webp",
+            "logo": "images/auto-value-logo_100x100.webp",
             "membership level": "Bronze"
         },
         {
@@ -53,7 +53,7 @@
             "address": "404 Art Avenue, Samborondón, Ecuador",
             "phone": "+593 9 8765 4327",
             "url": "https://www.bowersmerena.ec",
-            "logo": "images/bittek-logo.webp",
+            "logo": "images/auto-value-logo_100x100.webp",
             "membership level": "Gold"
         },
         {
@@ -61,7 +61,7 @@
             "address": "505 Service Street, Samborondón, Ecuador",
             "phone": "+593 9 8765 4328",
             "url": "https://www.butler.ec",
-            "logo": "images/bittek-logo.webp",
+            "logo": "images/auto-value-logo_100x100.webp",
             "membership level": "Silver"
         },
         {
@@ -69,16 +69,8 @@
             "address": "606 Auto Avenue, Samborondón, Ecuador",
             "phone": "+593 9 8765 4329",
             "url": "https://www.autovalue.ec",
-            "logo": "images/bittek-logo.webp",
+            "logo": "images/auto-value-logo_100x100.webp",
             "membership level": "Bronze"
-        },
-        {
-            "name": "RSA Security",
-            "address": "707 Cybersecurity Street, Samborondón, Ecuador",
-            "phone": "+593 9 8765 4330",
-            "url": "https://www.rsasecurity.ec",
-            "logo": "images/bittek-logo.webp",
-            "membership level": "Gold"
         }
     ]
 }

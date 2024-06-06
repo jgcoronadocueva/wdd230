@@ -9,7 +9,7 @@
     --primary-background-color: #123440;
     --secondary-background-color: #f3f2ed;
     --cta-button-background-color: #123440;
-    --hover-background-color: #f39823;
+    --hover-background-color: #FFBE0B;
     --primary-text-color: #000;
     --secondary-text-color: #ffffff;
 
@@ -30,7 +30,7 @@ body {
 header {
     background-color: var(--primary-background-color);
     color: #fff;
-    padding: 15px 30px;
+    padding: 10px 50px;
     user-select: none;
 }
 
@@ -163,12 +163,52 @@ i {
     margin-right: 15px;
 }
 
-/*MAIN SECTION*/
+/*BANNER*/
+.banner {
+    display: none;
+    background-color: var(--secondary-background-color);
+    color: var(--primary-text-color);
+    font-family: var(--body-font-family);
+    font-size: 12px;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+#banner p {
+    font-weight: bold;
+}
+
+#banner-close-button {
+    border: none;
+    cursor: pointer;
+    margin-left: 15px;
+    background-color: #FFF;
+    border: 2px solid #000;
+    padding: 5px;
+}
+
+/*MAIN FOR ALL PAGES*/
 main {
-    padding-bottom: 1rem;
+    margin: 25px auto;
+}
+
+/*MAIN EXCEPT HOMEPAGE*/
+#discover-main,
+#join-main,
+#directory-main {
+    width: 90%;
+}
+
+/*HOME PAGE MAIN*/
+#homepage-main #cards {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero {
+    margin-top: -25px;
     position: relative;
     text-align: center;
 }
@@ -193,6 +233,11 @@ main {
     cursor: pointer;
     color: rgba(255, 255, 255, 0.878);
     text-decoration: none;
+}
+
+.cta:hover {
+    background-color: var(--hover-background-color);
+    color: var(--primary-text-color);
 }
 
 .card {
@@ -293,7 +338,7 @@ main {
 
 
 /*JOIN PAGE*/
-#main-join {
+#join-main {
     display: block;
     padding: .5rem;
 }
@@ -301,6 +346,7 @@ main {
 #membership-subscription h2 {
     margin-left: 15px;
     margin-bottom: 10px;
+    font-family: var(--secondary-font-family);
 }
 
 #membership-benefits {
@@ -310,6 +356,7 @@ main {
 
 #membership-benefits h2 {
     text-align: center;
+    font-family: var(--secondary-font-family);
 }
 
 .membership-benefits-card {
@@ -318,11 +365,13 @@ main {
     padding-left: 2rem;
     margin: 1rem 0;
     box-shadow: 0px 0px 5px var(--primary-background-color);
-    border-radius: 15px;
+    border-radius: 10px;
+    font-family: var(--body-font-family);
 }
 
 .membership-benefits-card h3 {
     text-align: center;
+    font-family: var(--secondary-font-family);
 }
 
 .membership-benefits-card ul {
@@ -338,7 +387,7 @@ form {
     margin: 0 auto;
     background-color: #ffffff;
     padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 2px var(--primary-background-color);
     border-radius: 10px;
 }
 
@@ -353,12 +402,14 @@ legend {
     font-weight: bold;
     margin-bottom: 15px;
     text-align: left;
+    font-family: var(--secondary-font-family);
 }
 
 label {
     display: block;
     margin-bottom: 10px;
     text-align: left;
+    font-family: var(--secondary-font-family);
 }
 
 input[type="text"],
@@ -371,18 +422,25 @@ select {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
+    margin-top: 3px;
     margin-bottom: 15px;
+    font-family: var(--body-font-family);
 }
 
 input[type="submit"] {
     background-color: var(--cta-button-background-color);
-    font-family: var(--cta-button-font-type);
+    font-family: var(--cta-button-font-family);
     color: white;
-    padding: 15px 20px;
+    padding: 15px 30px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+}
+
+#submit-button {
+    display: flex;
+    justify-content: center;
 }
 
 input[type="submit"]:hover {
@@ -403,14 +461,14 @@ select:focus {
     box-shadow: 0px 0px 5px var(--primary-background-color);
 }
 
-#main-thankyou h1,
+#thankyou-main h1,
 p {
     text-align: center;
 }
 
 
 /*DIRECTORY PAGE*/
-#main-directory {
+#directory-main {
     margin: 0 auto;
     padding: 0.5rem;
     max-width: 700px;

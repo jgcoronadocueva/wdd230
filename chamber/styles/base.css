@@ -243,7 +243,7 @@ main {
 }
 
 .card {
-    background-color: #f3f2ed;
+    background-color: var(--secondary-background-color);
     padding: .5rem;
     padding-left: 2rem;
     margin: 1rem;
@@ -251,8 +251,21 @@ main {
 }
 
 .card h2 {
-    font-family: Kanit, serif;
+    font-family: var(--secondary-font-family);
+    margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.card h3 {
+    font-family: var(--secondary-font-family);
+}
+
+.card p {
+    font-family: var(--body-font-family);
+    margin-left: 10px;
+    line-height: 20px;
+    font-size: .8rem;
+    text-align: left;
 }
 
 #spotlights {
@@ -285,11 +298,7 @@ main {
 }
 
 
-
 /*DISCOVER PAGE*/
-
-
-
 .gallery {
     flex: 1 1 100%;
     order: 1;
@@ -320,7 +329,6 @@ main {
     margin-bottom: 5px;
 }
 
-/* Styling for gallery */
 .photo {
     margin-bottom: 20px;
 }
@@ -463,9 +471,12 @@ select:focus {
     box-shadow: 0px 0px 5px var(--primary-background-color);
 }
 
+
+/*THANK YOU PAGE*/
 #thankyou-main h1,
 p {
     text-align: center;
+    font-family: var(--body-font-family);
 }
 
 

@@ -71,4 +71,18 @@
         margin-bottom: 10px;
     }
 
+    /*DIRECTORY PAGE*/
+    .list section {
+        display: grid;
+        grid-template-columns: 200px 1fr 200px 300px;
+        margin: 0;
+        padding: 0.5rem;
+        justify-items: left;
+        align-items: center;
+    }
+
+    .list section>* {
+        margin: 0 1rem;
+    }
+
 }

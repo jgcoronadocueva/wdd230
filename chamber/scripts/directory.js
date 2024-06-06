@@ -16,7 +16,7 @@ function displayChamberMembers(companies) {
         let name = document.createElement("h2");
         let address = document.createElement("p");
         let website = document.createElement("a");
-        let membership = document.createElement("h4");
+        let membership = document.createElement("h3");
 
         logo.setAttribute("src", company.logo);
         logo.setAttribute("alt", `${company.name} logo`);

@@ -498,7 +498,7 @@ p {
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 10px;
+    grid-gap: 20px;
     align-items: center;
 }
 
@@ -508,31 +508,28 @@ p {
 
 .grid img {
     box-shadow: 0 0 10px var(--primary-background-color);
+    margin-bottom: 5px;
 }
-
-
 
 .grid h2 {
     font-family: var(--secondary-font-family);
+    margin-bottom: 5px;
+}
+
+.grid h3,
+.grid p {
+    margin-bottom: 3px;
 }
 
 .list {
-    display: flex;
-    flex-direction: column;
+    display: block;
     font-size: 1rem;
-    align-items: center;
 }
 
 .list section {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 0;
-    padding: 0.5rem;
-    justify-items: left;
-}
-
-.list section>* {
-    margin: 0 1rem;
+    margin: 5px 0;
+    line-height: 20px;
+    padding: 10px;
 }
 
 .list section img {
@@ -544,15 +541,15 @@ p {
 }
 
 .list section h3 {
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 .list section:nth-child(even) {
     background-color: #CDE8E5;
 }
 
-section h3 {
-    font-size: 1rem;
+.list section p {
+    text-align: left;
 }
 
 section p {

@@ -6,33 +6,32 @@
 
 :root {
     /*COLORS*/
-    --primary-background-color: #4D869C;
-    --secondary-background-color: #EEF7FF;
-    --cta-button-background-color: #44aca0e6;
-    --hover-background-color: #e9a44a;
+    --primary-background-color: #123440;
+    --secondary-background-color: #f3f2ed;
+    --cta-button-background-color: #123440;
+    --hover-background-color: #f39823;
     --primary-text-color: #000;
     --secondary-text-color: #ffffff;
 
     /*FONTS*/
-    --cta-button-font-type: Noto Sans, sans-serif;
+    --primary-font-family: "Cinzel Decorative", Arial, sans-serif;
+    --secondary-font-family: "Kanit", Arial, sans-serif;
+    --body-font-family: "Noto Sans", Verdana, sans-serif;
+    --cta-button-font-family: "Kanit", Arial, sans-serif;
 }
 
 
-/*ALL PAGES*/
-
+/*HEADER*/
 body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px;
-    background-color: #333;
+header {
+    background-color: var(--primary-background-color);
     color: #fff;
+    padding: 15px 30px;
+    user-select: none;
 }
 
 #container {
@@ -41,262 +40,131 @@ nav {
     width: 30%;
 }
 
-#logo {
+#chamber-logo {
     color: #fff;
     text-decoration: none;
-    margin-left: 30px;
     margin-right: 15px;
-    font-size: 1.5rem;
-    font-weight: bold;
+    width: 60px;
+    height: 60px;
+}
+
+header h1 {
+    font-family: var(--primary-font-family);
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #hamburger-button {
-    display: none;
+    display: block;
     cursor: pointer;
     border: none;
-    font-size: 1.5rem;
-    color: var(--secondary-text-color);
     background-color: transparent;
-}
-
-.menu-links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu-links li {
-    display: inline;
-    margin-left: 20px;
-}
-
-.menu-links li a {
-    display: inline-block;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-}
-
-@media only screen and (max-width: 768px) {
-
-    #logo {
-        margin-bottom: 10px;
-    }
-
-    h1 {
-        font-size: 1rem;
-        width: 50%;
-    }
-
-    #hamburger-button {
-        display: block;
-    }
-
-    .menu-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-    }
-
-    .menu-links li {
-        margin: 10px 0;
-    }
-
-    .menu-links.active {
-        display: flex;
-    }
-}
-
-/*
-body {
-    font-family: Noto Sans, sans-serif;
-}
-
-header {
-    background-color: var(--primary-background-color);
-    color: var(--primary-font-color);
-    color: #fff;
-    padding: 10px 0;
-}
-
-h1 {
-    margin: 0;
-    font-size: 1.5rem;
-    font-family: Cinzel Decorative, Arial, sans-serif;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.menu-links {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu-links li {
-    display: inline;
-    margin-left: 20px;
-}
-
-.menu-links li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.content {
-    padding: 20px;
-    text-align: center;
-}
-*/
-
-/*
-header {
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    background: var(--primary-background-color);
     color: var(--secondary-text-color);
+    font-size: 1.5rem;
 }
 
-#logo {
-    width: 70px;
-    height: 70px;
-    margin-right: 1rem;
-}
-
-h1 {
-    text-align: left;
-    font-family: Cinzel Decorative, serif;
-    font-size: 1.2rem;
-}
-
-#ham-button {
-    display: block;
-    font-size: 2rem;
-    border: 0;
-    background: none;
-    right: 1rem;
-    top: 1rem;
-    color: var(--text-color-1);
-    float: left;
-}
-
-
-
-.menu-links {
-    list-style: none;
+ul.menu-links {
     display: none;
-    list-style: none;
-    width: 100%;
-}
-
-.menu-links.open {
-    display: inline-block;
-}
-
-.menu-links.open li {
-    display: block;
-    text-align: center;
-}
-
-
-
-#ham-button::before {
-    content: "☰";
-}
-
-#ham-button.open::before {
-    content: "X";
-}
-
-
-nav a {
-    display: block;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 1rem;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-
-nav a {
-    display: block;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 1rem;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-.navigation {
-	display: flex;
-	flex-direction: column;
-	list-style: none;
-	background-color: #333;
-	color: #fff;
-}
-
-
-.menu-links {
-    display: none;
-    list-style-type: none;
-}
-
-
-.menu-links.open {
-    display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
+    width: 100%;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-
-
-nav .active {
-    background-color: #e2d9c4b3;
+ul.menu-links li {
+    margin: 5px 0;
+    font-family: var(--secondary-font-family);
+    font-size: 1.1rem;
 }
-*/
+
+ul.menu-links li a {
+    display: inline-block;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+ul.menu-links.open {
+    display: flex;
+}
+
+ul.menu-links li a:hover {
+    color: var(--hover-background-color);
+    text-decoration: underline;
+}
+
+ul.menu-links li a.current {
+    color: var(--hover-background-color);
+}
 
 /*FOOTER*/
-#contactInfo {
-    background-color: #7AB2B2;
-    color: rgb(3, 3, 3);
-    font-size: 1.1rem;
-    padding: .5rem;
+footer {
+    background-color: var(--primary-background-color);
+    color: var(--secondary-text-color);
+    padding-top: 20px;
+    padding-bottom: 15px;
 }
 
-footer {
+footer h3 {
+    font-family: var(--primary-font-family);
+    font-size: 20px;
+    line-height: 25px;
+    width: 275px;
+    margin-bottom: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+footer p {
+    font-family: var(--body-font-family);
+    margin-top: 7px;
+}
+
+#contact-info {
+    background-color: var(--primary-background-color);
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
     text-align: center;
 }
 
-#contactInfo p {
-    padding: .2rem;
+#dev-info {
+    background-color: var(--primary-background-color);
+    font-family: var(--secondary-font-family);
+    font-size: 12px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-top: 1px solid var(--secondary-text-color);
 }
 
-#devInfo {
-    background-color: #EEF7FF;
-    font-size: 0.8rem;
-    padding: .5rem;
-    padding-bottom: 1rem;
+#dev-info p:nth-child(1) {
+    margin-top: 10px;
+
 }
 
+#google-map {
+    width: 100%;
+    padding: 0 60px;
+    margin-bottom: 20px;
+}
+
+i {
+    margin-right: 15px;
+}
 
 /*MAIN SECTION*/
 main {
-    background-color: #ffffff;
     padding-bottom: 1rem;
 }
 
@@ -319,7 +187,7 @@ main {
     background-color: var(--cta-button-background-color);
     border: none;
     border-radius: 5px;
-    font-family: var(--cta-button-font-type);
+    font-family: var(--cta-button-font-family);
     font-size: 1rem;
     text-transform: uppercase;
     cursor: pointer;
@@ -328,9 +196,11 @@ main {
 }
 
 .card {
-    padding: 1rem;
-    background-color: #EEF7FF;
+    background-color: #f3f2ed;
+    padding: .5rem;
+    padding-left: 2rem;
     margin: 1rem;
+    box-shadow: 0px 0px 5px var(--primary-background-color);
 }
 
 .card h2 {
@@ -341,7 +211,6 @@ main {
 #spotlights {
     padding: 1rem;
     margin: 1rem;
-    background-color: #EEF7FF;
 }
 
 #spotlights .card {
@@ -355,7 +224,7 @@ main {
 
 .event {
     text-align: left;
-    background-color: #7AB2B2;
+    background-color: #f3f2ed;
     color: rgb(3, 3, 3);
     padding: 0.5rem;
     max-width: 90%;
@@ -469,7 +338,6 @@ form {
     margin: 0 auto;
     background-color: #ffffff;
     padding: 20px;
-    border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }

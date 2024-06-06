@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samborondon Chamber of Commerce | Home</title>
+    <title>Join the Chamber | Samborondon Chamber of Commerce | Samborondon, Ecuador </title>
     <meta name="description"
-        content="Welcome to the Samborondon Chamber of Commerce website. Here you can find information about local businesses, upcoming events, and resources for entrepreneurs.">
+        content="Join page of the Samborondon Chamber of Commerce website that contains a subscription form and membership information">
     <meta name="author" content="Gonzalo Coronado">
     <meta property="og:title" content="Samborondon Chamber of Commerce">
     <meta property="og:type" content="website">
@@ -26,17 +26,17 @@
 
 <body>
     <header>
-        <div id="siteName">
-            <h1>Samborondon Chamber of Commerce</h1>
-        </div>
-
         <nav>
-            <button id="ham-button"></button>
+            <div id="container">
+                <img id="chamber-logo" src="images/chamber-logo.webp" alt="Samborondon chamber of commerce logo">
+                <h1>Samborondon Chamber of Commerce</h1>
+            </div>
+            <button id="hamburger-button">&#9776;</button>
             <ul class="menu-links">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html">Directory</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="current" href="discover.html">Discover</a></li>
                 <li><a href="join.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
             </ul>
         </nav>
     </header>
@@ -106,20 +106,26 @@
     </main>
 
     <footer>
-        <div id="contactInfo">
-            <p>Samborondon Chamber of Commerce</p>
-            <p>Address</p>
-            <p>Phone Number</p>
+        <div id="contact-info">
+            <h3>Samborondon Chamber of Commerce</h3>
+            <p><i class="fas fa-map-marker-alt"></i>Av. Leon Febres Cordero Vistana 1000</p>
+            <p><i class="fas fa-envelope"></i>info@sambochamber.com</p>
+            <p><i class="fas fa-phone"></i>+593 98-991-5418</p>
         </div>
-
-        <div id="devInfo">
+        <iframe id="google-map"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1000.0329346824602!2d-79.89724548638573!3d-2.0288226151375692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sec!4v1717550182526!5m2!1sen!2sec"
+            width="420" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div id="dev-info">
             <p>&copy; <span id="currentYear"></span> Gonzalo Coronado | WDD 230 Project
             </p>
             <p id="lastModified"></p>
         </div>
     </footer>
 
-    <script src="scripts/index.js"></script>
     <script src="scripts/discover.js"></script>
+    <script src="scripts/chamber.js"></script>
+    <script src="https://kit.fontawesome.com/72c8983d1e.js" crossorigin="anonymous"></script>
+
 
 </body>

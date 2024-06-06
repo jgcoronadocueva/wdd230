@@ -12,6 +12,8 @@
     --hover-background-color: #FFBE0B;
     --primary-text-color: #000;
     --secondary-text-color: #ffffff;
+    --link-text-color: #40798C;
+    --link-hover-text-color: #EC0B43;
 
     /*FONTS*/
     --primary-font-family: "Cinzel Decorative", Arial, sans-serif;
@@ -469,18 +471,16 @@ p {
 
 /*DIRECTORY PAGE*/
 #directory-main {
-    margin: 0 auto;
-    padding: 0.5rem;
-    max-width: 700px;
+    max-width: 1200px;
     background-color: #fff;
-    font-family: Roboto, Helvetica, sans-serif;
+    font-family: var(--body-font-family);
 }
 
 #directory-menu {
     margin: 1rem auto;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 5px var(--secondary-background-color);
     padding: 0.5rem;
-    background-color: #bed;
+    background-color: var(--primary-background-color);
     text-align: center;
 }
 
@@ -490,15 +490,15 @@ p {
 }
 
 #directory {
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 0.5rem;
-    background-color: #eee;
+    padding: 1.5rem;
+    background-color: var(--secondary-background-color);
+    box-shadow: 0px 0px 2px var(--primary-background-color);
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 5px;
+    grid-gap: 10px;
     align-items: center;
 }
 
@@ -507,28 +507,29 @@ p {
 }
 
 .grid img {
-    border: 1px solid #fff;
-    box-shadow: 0 0 10px #333;
+    box-shadow: 0 0 10px var(--primary-background-color);
 }
 
 .grid section>* {
-    margin: 0.1rem;
+    margin: 0.5rem;
 }
 
 .grid h2 {
-    font-family: "Caveat", cursive;
+    font-family: var(--secondary-font-family);
 }
 
 .list {
     display: flex;
     flex-direction: column;
+    font-size: 1rem;
 }
 
 .list section {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
     margin: 0;
     padding: 0.25rem;
+    justify-items: left;
 }
 
 .list section>* {
@@ -537,20 +538,22 @@ p {
 
 .list section img {
     display: none;
-    /* smaller viewports only */
+}
+
+.list h2 {
+    font-size: 1rem;
 }
 
 .list section h3 {
     font-size: 1rem;
-    font-family: Roboto, Helvetica, sans-serif;
 }
 
 .list section:nth-child(even) {
-    background-color: #bed;
+    background-color: #CDE8E5;
 }
 
 section h3 {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 section p {
@@ -559,15 +562,12 @@ section p {
 }
 
 section a {
-    font-family: "Roboto", Arial, sans-serif;
+    font-family: var(--body-font-family);
     font-size: 0.85rem;
-    color: navy;
-    letter-spacing: 1.1pt;
+    color: var(--link-text-color-color);
+    letter-spacing: 1pt;
 }
 
-/*
-img {
-    height: 75px;
-    max-width: 100%;
-    /* Images are jerks - Seattle
-}*/
+a:hover {
+    color: var(--link-hover-text-color);
+}
